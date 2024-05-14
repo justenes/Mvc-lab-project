@@ -1,0 +1,18 @@
+<%- include('../shared/header', { title: 'Edit Recipe' }) %>
+
+<form action="/edit/<%= recipe.id %>" method="post">
+    <input type="hidden" name="id" value="<%= recipe.id %>">
+    <label for="name">Nazwa:</label>
+    
+    <input type="text" id="name" name="name" value="<%= recipe.name %>" required><br>
+    <label for="icerik">Składniki:</label>
+    
+    <input type="text" id="icerik" name="icerik" value="<%= recipe.icerik.join(',') %>" required><br>
+    <label for="instructions">Instrukcja:</label>
+    <textarea id="instructions" name="instructions" required><%= recipe.instructions %></textarea><br>
+    
+    <label for="prepTime">Czas przygotowania:</label>
+    <input type="number" id="prepTime" name="prepTime" value="<%= recipe.prepTime %>"><br>
+    
+    <button type="submit">Dodaj</button>
+</form>

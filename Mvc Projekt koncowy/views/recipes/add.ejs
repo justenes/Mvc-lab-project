@@ -1,0 +1,18 @@
+<%- include('../shared/header', { title: 'Moje notatki' }) %>
+
+<h2>Dodaj nowe jedzenie</h2>
+<form action="/add" method="post">
+    <label for="name">Nazwa:</label>
+    <input type="text" id="name" name="name" required><br>
+    
+    <label for="ingredients">Składniki:</label>
+    <input type="text" id="icerik" name="ingredients" required><br>
+    
+    <label for="instructions">Instrukcja:</label>
+    
+    <textarea id="instructions" name="instructions" required></textarea><br>
+    
+    <label for="prepTime">Czas przygotowania:</label>
+    <input type="number" id="prepTime" name="prepTime"><br>
+    <button type="submit">Dodaj</button>
+</form>

@@ -1,0 +1,105 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url(/images/home.jpg);
+    background-position: center;
+    padding: 110px;
+    
+}
+
+header {
+    background: #0e0e0e;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a,
+button {
+    
+    margin-top: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+    background-color: #555252;
+    border-radius: 30rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    display: inline-block;
+    
+}
+
+form {
+    margin-top: 50px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 30rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0e0e0e;
+    cursor: pointer;
+    transition: background-color 0.9s ease;
+}
+
+button:hover,
+button:focus { 
+    background-color: #745656;   
+    opacity: 0.8;
+}
+
+

@@ -1,0 +1,45 @@
+<%- include('../shared/header', { title: 'Kolekcja ulubionych przepisów kulinarnych' }) %>
+
+<h2>Jedzenia</h2>
+<ul>
+    <% recipes.forEach(recipe => { %>
+        <li id="recipe-<%= recipe.id %>"></li>
+            <strong>Nazwa:</strong> <%= recipe.name %><br>
+            <strong>Składniki:</strong> <%= recipe.ingredients.join(', ') %><br>
+            <strong>Instrukcje:</strong> <%= recipe.instructions %><br>
+            <strong>Czas przygotowania:</strong> <%= recipe.prepTime %> minutes<br>
+            <% if (recipe.comments.length) { %>
+                <h4>Komentarze:</h4>
+                <ul>
+                    <% recipe.comments.forEach(comment => { %>
+                        <li><%= comment.author %>: "<%= comment.text %>"</li>
+                    <% }); %>
+                </ul>
+            <% } %>
+            <% if (recipe.ratings.length) { %>
+                <h4>Oceny:</h4>
+                <ul>
+                    <% recipe.ratings.forEach(rating => { %>
+                        <li>Rating: <%= rating.score %>/5</li>
+                    <% }); %>
+                </ul>
+            <% } %>
+     <a href="/edit/<%= recipe.id %>">Edituj</a> |
+     <a href="/delete/<%= recipe.id %>" onclick="return confirm('You want to delete this?');">Usuń</a>
+     <form action="/add-comment" method="post">
+        <input type="hidden" name="recipeId" value="<%= recipe.id %>">
+         <input type="text" name="author" placeholder="Imię">
+        <input type="text" name="text" placeholder="Twój komentarz">
+         <button type="submit">Dodaj Komentarze</button>
+            </form>
+            <form action="/add-rating" method="post">
+                <input type="hidden" name="recipeId" value="<%= recipe.id %>">
+                <input type="number" name="score" placeholder="Ile chcesz dać?" min="1" max="10">
+                <button type="submit">Punkt</button>
+            </form>
+        </li>
+        <hr>
+    <% }) %>
+</ul>
+
+<a href="/add">Dodaj nowe notatki</a>
