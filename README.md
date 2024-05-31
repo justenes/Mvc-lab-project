@@ -37,7 +37,7 @@ Sklonuj Repozytorium:
 bash
 Copy code
 git clone https://github.com/justenes/Mvc-lab-project
-cd favori-yemek-tarifleri
+cd mvc-lab-projekt
 Zainstaluj Wymagane Pakiety:
 
 Copy code
