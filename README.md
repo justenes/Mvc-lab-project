@@ -1,4 +1,4 @@
-Na wstępie przepraszam za moje błędy ortograficzne.
+Na wstępie przepraszam za moje błędy ortograficzne. Z powodu niskiego poziomu zrozumienia języka polskiego często nie rozumiem wymagań dotyczących zajęć. Przepraszam za tę sytuację, staram się poprawić.
 
 
 
