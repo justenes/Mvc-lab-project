@@ -1,3 +1,7 @@
+Na wstępie przepraszam za moje błędy ortograficzne.
+
+
+
 Ulubione Przepisy Kulinarnych
 
 Spis Treści
